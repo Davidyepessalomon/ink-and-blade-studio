@@ -1,0 +1,54 @@
+{
+  "app_name": "INK & BLADE STUDIO",
+  "app_type": "hybrid_fullstack",
+  "theme": {
+    "archetype": "LUXURY & TACTICAL EDGE (Dark mode first with warm gold and amber accents)",
+    "primary_color": "#D4AF37",
+    "secondary_color": "#1A1A1A",
+    "accent_color": "#E5484D",
+    "background_color": "#0B0B0C",
+    "card_background": "#141416",
+    "text_primary": "#F4F4F5",
+    "text_secondary": "#A1A1AA"
+  },
+  "typography": {
+    "heading_font": "Cinzel / Unbounded / Display Serif",
+    "body_font": "Inter / Plus Jakarta Sans",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base text-zinc-300 leading-relaxed",
+      "small": "text-sm text-zinc-400"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-[#141416]/80 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "tracing_beam": "relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-[#D4AF37] before:to-transparent before:rounded-xl before:-z-10",
+    "sharp_border": "border border-zinc-800 rounded-none md:rounded-lg"
+  },
+  "image_urls": {
+    "hero_tattoo": "https://images.unsplash.com/photo-1616879564267-a336232e3a95?q=85&w=1200&auto=format&fit=crop",
+    "tattoo_sleeve": "https://images.unsplash.com/photo-1651650564239-7e96053d934c?q=85&w=800&auto=format&fit=crop",
+    "tattoo_back": "https://images.unsplash.com/photo-1716948943021-cea8dc2d2c3f?q=85&w=800&auto=format&fit=crop",
+    "barber_shop": "https://images.unsplash.com/photo-1786057424913-6954b0f424af?q=85&w=1200&auto=format&fit=crop",
+    "barber_cut": "https://images.unsplash.com/photo-1787008543379-91aaa64b0003?q=85&w=800&auto=format&fit=crop",
+    "barber_clipper": "https://images.unsplash.com/photo-1787008547954-726e3e6db7e8?q=85&w=800&auto=format&fit=crop",
+    "flash_sheet_1": "https://images.unsplash.com/photo-1725918128612-6021dbe24add?q=85&w=800&auto=format&fit=crop",
+    "flash_sheet_2": "https://images.unsplash.com/photo-1521308452854-e037c0062a1e?q=85&w=800&auto=format&fit=crop"
+  },
+  "key_features": [
+    "Portfolio & Design Showcase with style filtering (Tattoos, Barber Cuts, Flash Sheets) & pricing estimates",
+    "Smart Appointment Scheduling for instant Barber booking (with time slots & buffers) and Custom Tattoo consultation flow",
+    "Stripe Deposit & Payment Processing flow with invoice & receipt generation ($50 deposit checkout)",
+    "Custom Tattoo Request Pipeline with image upload, placement, size, budget, and admin quote negotiation",
+    "Client & Schedule Management Admin Dashboard with calendar views, inquiry approval, session tracking, and aftercare note delivery",
+    "Guest booking & tracking + Password login for Artists/Admin"
+  ],
+  "accessibility_and_testing": {
+    "data_testid_convention": "kebab-case role-based testid on all buttons, forms, tabs, inputs, cards",
+    "contrast_standard": "APCA and WCAG AA minimum 4.5:1 for normal text, explicit text color on all hover states"
+  },
+  "instructions_to_main_agent": "Build a stunning, fully functional React application featuring client portfolio browsing, instant barber booking with stripe deposit simulation, custom tattoo inquiry pipeline with image attachment simulation and quote management, and a robust Admin Dashboard with calendar schedule and aftercare notes delivery."
+}
