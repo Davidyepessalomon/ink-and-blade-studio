@@ -14,7 +14,7 @@ export default function ArtistsSection({ onSelectArtistForBooking }) {
     const fetchArtists = async () => {
       try {
         const res = await axios.get(`${API}/artists`);
-        setArtists(Array.isArray(res.data) ? res.data : (res.data.artists || []));
+        setArtists(res.data);
       } catch (e) {
         console.error(e);
       } finally {
@@ -79,7 +79,7 @@ export default function ArtistsSection({ onSelectArtistForBooking }) {
                   </p>
 
                   <div className="flex flex-wrap gap-1.5 pt-1">
-                    {artist.specialties?.map((spec) => (
+                    {Array.isArray(artist.specialties) && artist.specialties.map((spec) => (
                       <span key={spec} className="text-[10px] px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-zinc-300">
                         {spec}
                       </span>
