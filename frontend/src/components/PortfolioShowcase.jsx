@@ -126,7 +126,7 @@ export default function PortfolioShowcase({ onBookItem }) {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map((item) => (
+            {Array.isArray(items) && items.map((item) => (
               <div
                 key={item.id}
                 data-testid={`portfolio-card-${item.id}`}
