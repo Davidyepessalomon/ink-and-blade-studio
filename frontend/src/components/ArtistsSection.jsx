@@ -43,7 +43,7 @@ export default function ArtistsSection({ onSelectArtistForBooking }) {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {artists.map((artist) => (
+          {Array.isArray(artists) && artists.map((artist) => (
             <div
               key={artist.id}
               data-testid={`artist-profile-card-${artist.id}`}
@@ -79,13 +79,13 @@ export default function ArtistsSection({ onSelectArtistForBooking }) {
                   </p>
 
                   <div className="flex flex-wrap gap-1.5 pt-1">
-                    {artist.specialties?.map((spec) => (
+                    {Array.isArray(artist.specialties) && artist.specialties.map((spec) => (
                       <span key={spec} className="text-[10px] px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800 text-zinc-300">
                         {spec}
                       </span>
                     ))}
                   </div>
-                </div>
+                </div>s
               </div>
 
               {/* Action */}
