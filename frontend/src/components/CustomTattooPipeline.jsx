@@ -219,7 +219,7 @@ export default function CustomTattooPipeline({ onBookApprovedInquiry }) {
                       className="w-full bg-zinc-900 border border-zinc-700 text-white rounded-md p-2 text-sm mt-1"
                     >
                       <option value="all">Any Available Resident Master</option>
-                      {artists.map((a) => (
+                      {Array.isArray(artists) && artists.map((a) => (
                         <option key={a.id} value={a.id}>{a.name} ({a.role})</option>
                       ))}
                     </select>
